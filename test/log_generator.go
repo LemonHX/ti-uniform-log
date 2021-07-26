@@ -17,9 +17,7 @@ func (log *Log) CloseLog() {
 
 func (log *Log) GenerateLogs(estimated_max_file_size int) error {
 	if log.file == nil {
-		if
-		file, err := os.OpenFile("test.log", os.O_RDWR|os.O_CREATE, 0755);
-			err != nil {
+		if file, err := os.OpenFile("test.log", os.O_RDWR|os.O_CREATE, 0755); err != nil {
 			return err
 		} else {
 			log.file = file
@@ -38,7 +36,12 @@ while:
 				goto while
 			}
 		} else {
-			return nil
+			str := GenerateLog(rand.Intn(30))
+			if _, err = log.file.WriteString(str); err != nil {
+				return err
+			} else {
+				return nil
+			}
 		}
 	}
 }
@@ -47,9 +50,10 @@ func GenerateLog(message_size int) string {
 	date := generateDateTime()
 	level := generateLogLevel()
 	pos := generatePosition()
+	custom_message := generateCustomMessage()
 	var messageBuilder strings.Builder
 	for i := 0; i < message_size; i += 1 {
-		messageBuilder.WriteString(generateMessage())
+		messageBuilder.WriteString(generateKVPair())
 	}
 	messages := messageBuilder.String()
 	var resBuilder strings.Builder
@@ -59,7 +63,11 @@ func GenerateLog(message_size int) string {
 	resBuilder.WriteString(" ")
 	resBuilder.WriteString(pos)
 	resBuilder.WriteString(" ")
-	resBuilder.WriteString(messages)
+	resBuilder.WriteString(custom_message)
+	if len(messages) > 0 {
+		resBuilder.WriteString(" ")
+		resBuilder.WriteString(messages)
+	}
 	return resBuilder.String()
 }
 
@@ -88,16 +96,8 @@ func generatePosition() string {
 	}
 }
 
-func generateMessage() string {
-	if rand.Intn(2) == 0 {
-		return generateRawMessage()
-	} else {
-		return generateKVPair()
-	}
-}
-
-func generateRawMessage() string {
-	message := []string{"[\"Slow query\"]", "[\"Fast query\"]", "[\"114514\"]", "[\"hhhaaaaaaa\"]"}
+func generateCustomMessage() string {
+	message := []string{"[\"Slow query\"]", "[Fast_Query]", "[\"114514\"]", "[\"hhhaaaaaaa\"]"}
 	return message[rand.Intn(4)]
 }
 

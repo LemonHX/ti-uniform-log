@@ -1,4 +1,4 @@
-// Code generated from /home/lemonhx/Desktop/Go/LogParser/UNIFORM_LOG.g4 by ANTLR 4.9.1. DO NOT EDIT.
+// Code generated from /Users/lemonhx/Desktop/Go/ti-uniform-log/parser/UNIFORM_LOG.g4 by ANTLR 4.9.1. DO NOT EDIT.
 
 package parser // UNIFORM_LOG
 
@@ -16,46 +16,48 @@ var _ = reflect.Copy
 var _ = strconv.Itoa
 
 var parserATN = []uint16{
-	3, 24715, 42794, 33075, 47597, 16764, 15335, 30598, 22884, 3, 18, 74, 4,
+	3, 24715, 42794, 33075, 47597, 16764, 15335, 30598, 22884, 3, 18, 80, 4,
 	2, 9, 2, 4, 3, 9, 3, 4, 4, 9, 4, 4, 5, 9, 5, 4, 6, 9, 6, 4, 7, 9, 7, 4,
-	8, 9, 8, 4, 9, 9, 9, 4, 10, 9, 10, 3, 2, 3, 2, 3, 2, 7, 2, 24, 10, 2, 12,
-	2, 14, 2, 27, 11, 2, 3, 2, 3, 2, 3, 3, 3, 3, 3, 3, 3, 3, 7, 3, 35, 10,
-	3, 12, 3, 14, 3, 38, 11, 3, 3, 4, 3, 4, 3, 4, 3, 4, 3, 5, 3, 5, 3, 5, 3,
-	5, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 5, 6, 54, 10, 6, 3, 7, 3, 7, 3,
-	7, 3, 7, 3, 7, 3, 7, 3, 7, 3, 7, 5, 7, 64, 10, 7, 3, 8, 3, 8, 3, 8, 3,
-	8, 3, 9, 3, 9, 3, 10, 3, 10, 3, 10, 2, 2, 11, 2, 4, 6, 8, 10, 12, 14, 16,
-	18, 2, 4, 3, 2, 15, 16, 6, 2, 8, 8, 10, 10, 12, 12, 15, 16, 2, 68, 2, 20,
-	3, 2, 2, 2, 4, 30, 3, 2, 2, 2, 6, 39, 3, 2, 2, 2, 8, 43, 3, 2, 2, 2, 10,
-	53, 3, 2, 2, 2, 12, 63, 3, 2, 2, 2, 14, 65, 3, 2, 2, 2, 16, 69, 3, 2, 2,
-	2, 18, 71, 3, 2, 2, 2, 20, 25, 5, 4, 3, 2, 21, 22, 7, 18, 2, 2, 22, 24,
-	5, 4, 3, 2, 23, 21, 3, 2, 2, 2, 24, 27, 3, 2, 2, 2, 25, 23, 3, 2, 2, 2,
-	25, 26, 3, 2, 2, 2, 26, 28, 3, 2, 2, 2, 27, 25, 3, 2, 2, 2, 28, 29, 7,
-	18, 2, 2, 29, 3, 3, 2, 2, 2, 30, 31, 5, 6, 4, 2, 31, 32, 5, 8, 5, 2, 32,
-	36, 5, 10, 6, 2, 33, 35, 5, 12, 7, 2, 34, 33, 3, 2, 2, 2, 35, 38, 3, 2,
-	2, 2, 36, 34, 3, 2, 2, 2, 36, 37, 3, 2, 2, 2, 37, 5, 3, 2, 2, 2, 38, 36,
-	3, 2, 2, 2, 39, 40, 7, 3, 2, 2, 40, 41, 7, 9, 2, 2, 41, 42, 7, 4, 2, 2,
-	42, 7, 3, 2, 2, 2, 43, 44, 7, 3, 2, 2, 44, 45, 7, 13, 2, 2, 45, 46, 7,
-	4, 2, 2, 46, 9, 3, 2, 2, 2, 47, 54, 7, 5, 2, 2, 48, 49, 7, 3, 2, 2, 49,
-	50, 7, 14, 2, 2, 50, 51, 7, 6, 2, 2, 51, 52, 7, 10, 2, 2, 52, 54, 7, 4,
-	2, 2, 53, 47, 3, 2, 2, 2, 53, 48, 3, 2, 2, 2, 54, 11, 3, 2, 2, 2, 55, 56,
-	7, 3, 2, 2, 56, 57, 5, 18, 10, 2, 57, 58, 7, 4, 2, 2, 58, 64, 3, 2, 2,
-	2, 59, 60, 7, 3, 2, 2, 60, 61, 5, 14, 8, 2, 61, 62, 7, 4, 2, 2, 62, 64,
-	3, 2, 2, 2, 63, 55, 3, 2, 2, 2, 63, 59, 3, 2, 2, 2, 64, 13, 3, 2, 2, 2,
-	65, 66, 5, 16, 9, 2, 66, 67, 7, 7, 2, 2, 67, 68, 5, 18, 10, 2, 68, 15,
-	3, 2, 2, 2, 69, 70, 9, 2, 2, 2, 70, 17, 3, 2, 2, 2, 71, 72, 9, 3, 2, 2,
-	72, 19, 3, 2, 2, 2, 6, 25, 36, 53, 63,
+	8, 9, 8, 4, 9, 9, 9, 4, 10, 9, 10, 4, 11, 9, 11, 4, 12, 9, 12, 3, 2, 3,
+	2, 3, 2, 7, 2, 28, 10, 2, 12, 2, 14, 2, 31, 11, 2, 3, 3, 3, 3, 3, 3, 3,
+	3, 3, 3, 7, 3, 38, 10, 3, 12, 3, 14, 3, 41, 11, 3, 3, 4, 3, 4, 3, 4, 3,
+	4, 3, 5, 3, 5, 3, 5, 3, 5, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 5,
+	6, 58, 10, 6, 3, 7, 3, 7, 3, 7, 3, 7, 3, 8, 3, 8, 3, 8, 3, 8, 3, 9, 3,
+	9, 3, 9, 3, 9, 3, 10, 3, 10, 3, 10, 3, 10, 3, 11, 3, 11, 3, 12, 3, 12,
+	3, 12, 2, 2, 13, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 2, 4, 3, 2, 16,
+	17, 6, 2, 9, 9, 11, 11, 13, 13, 16, 17, 2, 71, 2, 24, 3, 2, 2, 2, 4, 32,
+	3, 2, 2, 2, 6, 42, 3, 2, 2, 2, 8, 46, 3, 2, 2, 2, 10, 57, 3, 2, 2, 2, 12,
+	59, 3, 2, 2, 2, 14, 63, 3, 2, 2, 2, 16, 67, 3, 2, 2, 2, 18, 71, 3, 2, 2,
+	2, 20, 75, 3, 2, 2, 2, 22, 77, 3, 2, 2, 2, 24, 29, 5, 4, 3, 2, 25, 26,
+	7, 3, 2, 2, 26, 28, 5, 4, 3, 2, 27, 25, 3, 2, 2, 2, 28, 31, 3, 2, 2, 2,
+	29, 27, 3, 2, 2, 2, 29, 30, 3, 2, 2, 2, 30, 3, 3, 2, 2, 2, 31, 29, 3, 2,
+	2, 2, 32, 33, 5, 6, 4, 2, 33, 34, 5, 8, 5, 2, 34, 35, 5, 10, 6, 2, 35,
+	39, 5, 12, 7, 2, 36, 38, 5, 14, 8, 2, 37, 36, 3, 2, 2, 2, 38, 41, 3, 2,
+	2, 2, 39, 37, 3, 2, 2, 2, 39, 40, 3, 2, 2, 2, 40, 5, 3, 2, 2, 2, 41, 39,
+	3, 2, 2, 2, 42, 43, 7, 4, 2, 2, 43, 44, 7, 10, 2, 2, 44, 45, 7, 5, 2, 2,
+	45, 7, 3, 2, 2, 2, 46, 47, 7, 4, 2, 2, 47, 48, 7, 14, 2, 2, 48, 49, 7,
+	5, 2, 2, 49, 9, 3, 2, 2, 2, 50, 51, 7, 4, 2, 2, 51, 52, 7, 6, 2, 2, 52,
+	58, 7, 5, 2, 2, 53, 54, 7, 4, 2, 2, 54, 55, 5, 16, 9, 2, 55, 56, 7, 5,
+	2, 2, 56, 58, 3, 2, 2, 2, 57, 50, 3, 2, 2, 2, 57, 53, 3, 2, 2, 2, 58, 11,
+	3, 2, 2, 2, 59, 60, 7, 4, 2, 2, 60, 61, 5, 20, 11, 2, 61, 62, 7, 5, 2,
+	2, 62, 13, 3, 2, 2, 2, 63, 64, 7, 4, 2, 2, 64, 65, 5, 18, 10, 2, 65, 66,
+	7, 5, 2, 2, 66, 15, 3, 2, 2, 2, 67, 68, 7, 15, 2, 2, 68, 69, 7, 7, 2, 2,
+	69, 70, 7, 11, 2, 2, 70, 17, 3, 2, 2, 2, 71, 72, 5, 20, 11, 2, 72, 73,
+	7, 8, 2, 2, 73, 74, 5, 22, 12, 2, 74, 19, 3, 2, 2, 2, 75, 76, 9, 2, 2,
+	2, 76, 21, 3, 2, 2, 2, 77, 78, 9, 3, 2, 2, 78, 23, 3, 2, 2, 2, 5, 29, 39,
+	57,
 }
 var literalNames = []string{
-	"", "'['", "']'", "'[<unknown>]'", "':'", "'='",
+	"", "'\n'", "'['", "']'", "'<unknown>'", "':'", "'='",
 }
 var symbolicNames = []string{
-	"", "", "", "", "", "", "IP", "DATE_TIME", "NUM", "FLOAT", "DURATION",
-	"LEVEL", "PATHLOC", "STRING", "IDENT", "WS", "NL",
+	"", "", "", "", "", "", "", "IP", "DATE_TIME", "NUM", "FLOAT", "DURATION",
+	"LEVEL", "PATHLOC", "STRING", "IDENT", "WS",
 }
 
 var ruleNames = []string{
-	"logs", "log", "date_time", "level", "location", "message", "kv_pair",
-	"key", "value",
+	"logs", "log", "date_time", "level", "location", "custom_message", "message",
+	"known_location", "kv_pair", "key", "value",
 }
 
 type UNIFORM_LOGParser struct {
@@ -95,30 +97,32 @@ const (
 	UNIFORM_LOGParserT__2      = 3
 	UNIFORM_LOGParserT__3      = 4
 	UNIFORM_LOGParserT__4      = 5
-	UNIFORM_LOGParserIP        = 6
-	UNIFORM_LOGParserDATE_TIME = 7
-	UNIFORM_LOGParserNUM       = 8
-	UNIFORM_LOGParserFLOAT     = 9
-	UNIFORM_LOGParserDURATION  = 10
-	UNIFORM_LOGParserLEVEL     = 11
-	UNIFORM_LOGParserPATHLOC   = 12
-	UNIFORM_LOGParserSTRING    = 13
-	UNIFORM_LOGParserIDENT     = 14
-	UNIFORM_LOGParserWS        = 15
-	UNIFORM_LOGParserNL        = 16
+	UNIFORM_LOGParserT__5      = 6
+	UNIFORM_LOGParserIP        = 7
+	UNIFORM_LOGParserDATE_TIME = 8
+	UNIFORM_LOGParserNUM       = 9
+	UNIFORM_LOGParserFLOAT     = 10
+	UNIFORM_LOGParserDURATION  = 11
+	UNIFORM_LOGParserLEVEL     = 12
+	UNIFORM_LOGParserPATHLOC   = 13
+	UNIFORM_LOGParserSTRING    = 14
+	UNIFORM_LOGParserIDENT     = 15
+	UNIFORM_LOGParserWS        = 16
 )
 
 // UNIFORM_LOGParser rules.
 const (
-	UNIFORM_LOGParserRULE_logs      = 0
-	UNIFORM_LOGParserRULE_log       = 1
-	UNIFORM_LOGParserRULE_date_time = 2
-	UNIFORM_LOGParserRULE_level     = 3
-	UNIFORM_LOGParserRULE_location  = 4
-	UNIFORM_LOGParserRULE_message   = 5
-	UNIFORM_LOGParserRULE_kv_pair   = 6
-	UNIFORM_LOGParserRULE_key       = 7
-	UNIFORM_LOGParserRULE_value     = 8
+	UNIFORM_LOGParserRULE_logs           = 0
+	UNIFORM_LOGParserRULE_log            = 1
+	UNIFORM_LOGParserRULE_date_time      = 2
+	UNIFORM_LOGParserRULE_level          = 3
+	UNIFORM_LOGParserRULE_location       = 4
+	UNIFORM_LOGParserRULE_custom_message = 5
+	UNIFORM_LOGParserRULE_message        = 6
+	UNIFORM_LOGParserRULE_known_location = 7
+	UNIFORM_LOGParserRULE_kv_pair        = 8
+	UNIFORM_LOGParserRULE_key            = 9
+	UNIFORM_LOGParserRULE_value          = 10
 )
 
 // ILogsContext is an interface to support dynamic dispatch.
@@ -182,14 +186,6 @@ func (s *LogsContext) Log(i int) ILogContext {
 	return t.(ILogContext)
 }
 
-func (s *LogsContext) AllNL() []antlr.TerminalNode {
-	return s.GetTokens(UNIFORM_LOGParserNL)
-}
-
-func (s *LogsContext) NL(i int) antlr.TerminalNode {
-	return s.GetToken(UNIFORM_LOGParserNL, i)
-}
-
 func (s *LogsContext) GetRuleContext() antlr.RuleContext {
 	return s
 }
@@ -223,6 +219,7 @@ func (s *LogsContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 func (p *UNIFORM_LOGParser) Logs() (localctx ILogsContext) {
 	localctx = NewLogsContext(p, p.GetParserRuleContext(), p.GetState())
 	p.EnterRule(localctx, 0, UNIFORM_LOGParserRULE_logs)
+	var _la int
 
 	defer func() {
 		p.ExitRule()
@@ -240,36 +237,28 @@ func (p *UNIFORM_LOGParser) Logs() (localctx ILogsContext) {
 		}
 	}()
 
-	var _alt int
-
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(18)
+		p.SetState(22)
 		p.Log()
 	}
-	p.SetState(23)
+	p.SetState(27)
 	p.GetErrorHandler().Sync(p)
-	_alt = p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 0, p.GetParserRuleContext())
+	_la = p.GetTokenStream().LA(1)
 
-	for _alt != 2 && _alt != antlr.ATNInvalidAltNumber {
-		if _alt == 1 {
-			{
-				p.SetState(19)
-				p.Match(UNIFORM_LOGParserNL)
-			}
-			{
-				p.SetState(20)
-				p.Log()
-			}
-
+	for _la == UNIFORM_LOGParserT__0 {
+		{
+			p.SetState(23)
+			p.Match(UNIFORM_LOGParserT__0)
 		}
-		p.SetState(25)
+		{
+			p.SetState(24)
+			p.Log()
+		}
+
+		p.SetState(29)
 		p.GetErrorHandler().Sync(p)
-		_alt = p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 0, p.GetParserRuleContext())
-	}
-	{
-		p.SetState(26)
-		p.Match(UNIFORM_LOGParserNL)
+		_la = p.GetTokenStream().LA(1)
 	}
 
 	return localctx
@@ -341,6 +330,16 @@ func (s *LogContext) Location() ILocationContext {
 	}
 
 	return t.(ILocationContext)
+}
+
+func (s *LogContext) Custom_message() ICustom_messageContext {
+	var t = s.GetTypedRuleContext(reflect.TypeOf((*ICustom_messageContext)(nil)).Elem(), 0)
+
+	if t == nil {
+		return nil
+	}
+
+	return t.(ICustom_messageContext)
 }
 
 func (s *LogContext) AllMessage() []IMessageContext {
@@ -419,28 +418,32 @@ func (p *UNIFORM_LOGParser) Log() (localctx ILogContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(28)
+		p.SetState(30)
 		p.Date_time()
 	}
 	{
-		p.SetState(29)
+		p.SetState(31)
 		p.Level()
 	}
 	{
-		p.SetState(30)
+		p.SetState(32)
 		p.Location()
 	}
-	p.SetState(34)
+	{
+		p.SetState(33)
+		p.Custom_message()
+	}
+	p.SetState(37)
 	p.GetErrorHandler().Sync(p)
 	_la = p.GetTokenStream().LA(1)
 
-	for _la == UNIFORM_LOGParserT__0 {
+	for _la == UNIFORM_LOGParserT__1 {
 		{
-			p.SetState(31)
+			p.SetState(34)
 			p.Message()
 		}
 
-		p.SetState(36)
+		p.SetState(39)
 		p.GetErrorHandler().Sync(p)
 		_la = p.GetTokenStream().LA(1)
 	}
@@ -542,16 +545,16 @@ func (p *UNIFORM_LOGParser) Date_time() (localctx IDate_timeContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(37)
-		p.Match(UNIFORM_LOGParserT__0)
+		p.SetState(40)
+		p.Match(UNIFORM_LOGParserT__1)
 	}
 	{
-		p.SetState(38)
+		p.SetState(41)
 		p.Match(UNIFORM_LOGParserDATE_TIME)
 	}
 	{
-		p.SetState(39)
-		p.Match(UNIFORM_LOGParserT__1)
+		p.SetState(42)
+		p.Match(UNIFORM_LOGParserT__2)
 	}
 
 	return localctx
@@ -651,16 +654,16 @@ func (p *UNIFORM_LOGParser) Level() (localctx ILevelContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(41)
-		p.Match(UNIFORM_LOGParserT__0)
+		p.SetState(44)
+		p.Match(UNIFORM_LOGParserT__1)
 	}
 	{
-		p.SetState(42)
+		p.SetState(45)
 		p.Match(UNIFORM_LOGParserLEVEL)
 	}
 	{
-		p.SetState(43)
-		p.Match(UNIFORM_LOGParserT__1)
+		p.SetState(46)
+		p.Match(UNIFORM_LOGParserT__2)
 	}
 
 	return localctx
@@ -704,12 +707,14 @@ func NewLocationContext(parser antlr.Parser, parent antlr.ParserRuleContext, inv
 
 func (s *LocationContext) GetParser() antlr.Parser { return s.parser }
 
-func (s *LocationContext) PATHLOC() antlr.TerminalNode {
-	return s.GetToken(UNIFORM_LOGParserPATHLOC, 0)
-}
+func (s *LocationContext) Known_location() IKnown_locationContext {
+	var t = s.GetTypedRuleContext(reflect.TypeOf((*IKnown_locationContext)(nil)).Elem(), 0)
 
-func (s *LocationContext) NUM() antlr.TerminalNode {
-	return s.GetToken(UNIFORM_LOGParserNUM, 0)
+	if t == nil {
+		return nil
+	}
+
+	return t.(IKnown_locationContext)
 }
 
 func (s *LocationContext) GetRuleContext() antlr.RuleContext {
@@ -762,42 +767,154 @@ func (p *UNIFORM_LOGParser) Location() (localctx ILocationContext) {
 		}
 	}()
 
-	p.SetState(51)
+	p.SetState(55)
 	p.GetErrorHandler().Sync(p)
-
-	switch p.GetTokenStream().LA(1) {
-	case UNIFORM_LOGParserT__2:
+	switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 2, p.GetParserRuleContext()) {
+	case 1:
 		p.EnterOuterAlt(localctx, 1)
 		{
-			p.SetState(45)
-			p.Match(UNIFORM_LOGParserT__2)
-		}
-
-	case UNIFORM_LOGParserT__0:
-		p.EnterOuterAlt(localctx, 2)
-		{
-			p.SetState(46)
-			p.Match(UNIFORM_LOGParserT__0)
-		}
-		{
-			p.SetState(47)
-			p.Match(UNIFORM_LOGParserPATHLOC)
-		}
-		{
 			p.SetState(48)
-			p.Match(UNIFORM_LOGParserT__3)
+			p.Match(UNIFORM_LOGParserT__1)
 		}
 		{
 			p.SetState(49)
-			p.Match(UNIFORM_LOGParserNUM)
+			p.Match(UNIFORM_LOGParserT__3)
 		}
 		{
 			p.SetState(50)
-			p.Match(UNIFORM_LOGParserT__1)
+			p.Match(UNIFORM_LOGParserT__2)
 		}
 
+	case 2:
+		p.EnterOuterAlt(localctx, 2)
+		{
+			p.SetState(51)
+			p.Match(UNIFORM_LOGParserT__1)
+		}
+		{
+			p.SetState(52)
+			p.Known_location()
+		}
+		{
+			p.SetState(53)
+			p.Match(UNIFORM_LOGParserT__2)
+		}
+
+	}
+
+	return localctx
+}
+
+// ICustom_messageContext is an interface to support dynamic dispatch.
+type ICustom_messageContext interface {
+	antlr.ParserRuleContext
+
+	// GetParser returns the parser.
+	GetParser() antlr.Parser
+
+	// IsCustom_messageContext differentiates from other interfaces.
+	IsCustom_messageContext()
+}
+
+type Custom_messageContext struct {
+	*antlr.BaseParserRuleContext
+	parser antlr.Parser
+}
+
+func NewEmptyCustom_messageContext() *Custom_messageContext {
+	var p = new(Custom_messageContext)
+	p.BaseParserRuleContext = antlr.NewBaseParserRuleContext(nil, -1)
+	p.RuleIndex = UNIFORM_LOGParserRULE_custom_message
+	return p
+}
+
+func (*Custom_messageContext) IsCustom_messageContext() {}
+
+func NewCustom_messageContext(parser antlr.Parser, parent antlr.ParserRuleContext, invokingState int) *Custom_messageContext {
+	var p = new(Custom_messageContext)
+
+	p.BaseParserRuleContext = antlr.NewBaseParserRuleContext(parent, invokingState)
+
+	p.parser = parser
+	p.RuleIndex = UNIFORM_LOGParserRULE_custom_message
+
+	return p
+}
+
+func (s *Custom_messageContext) GetParser() antlr.Parser { return s.parser }
+
+func (s *Custom_messageContext) Key() IKeyContext {
+	var t = s.GetTypedRuleContext(reflect.TypeOf((*IKeyContext)(nil)).Elem(), 0)
+
+	if t == nil {
+		return nil
+	}
+
+	return t.(IKeyContext)
+}
+
+func (s *Custom_messageContext) GetRuleContext() antlr.RuleContext {
+	return s
+}
+
+func (s *Custom_messageContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
+	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *Custom_messageContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(UNIFORM_LOGListener); ok {
+		listenerT.EnterCustom_message(s)
+	}
+}
+
+func (s *Custom_messageContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(UNIFORM_LOGListener); ok {
+		listenerT.ExitCustom_message(s)
+	}
+}
+
+func (s *Custom_messageContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
+	switch t := visitor.(type) {
+	case UNIFORM_LOGVisitor:
+		return t.VisitCustom_message(s)
+
 	default:
-		panic(antlr.NewNoViableAltException(p, nil, nil, nil, nil, nil))
+		return t.VisitChildren(s)
+	}
+}
+
+func (p *UNIFORM_LOGParser) Custom_message() (localctx ICustom_messageContext) {
+	localctx = NewCustom_messageContext(p, p.GetParserRuleContext(), p.GetState())
+	p.EnterRule(localctx, 10, UNIFORM_LOGParserRULE_custom_message)
+
+	defer func() {
+		p.ExitRule()
+	}()
+
+	defer func() {
+		if err := recover(); err != nil {
+			if v, ok := err.(antlr.RecognitionException); ok {
+				localctx.SetException(v)
+				p.GetErrorHandler().ReportError(p, v)
+				p.GetErrorHandler().Recover(p, v)
+			} else {
+				panic(err)
+			}
+		}
+	}()
+
+	p.EnterOuterAlt(localctx, 1)
+	{
+		p.SetState(57)
+		p.Match(UNIFORM_LOGParserT__1)
+	}
+	{
+		p.SetState(58)
+		p.Key()
+	}
+	{
+		p.SetState(59)
+		p.Match(UNIFORM_LOGParserT__2)
 	}
 
 	return localctx
@@ -841,16 +958,6 @@ func NewMessageContext(parser antlr.Parser, parent antlr.ParserRuleContext, invo
 
 func (s *MessageContext) GetParser() antlr.Parser { return s.parser }
 
-func (s *MessageContext) Value() IValueContext {
-	var t = s.GetTypedRuleContext(reflect.TypeOf((*IValueContext)(nil)).Elem(), 0)
-
-	if t == nil {
-		return nil
-	}
-
-	return t.(IValueContext)
-}
-
 func (s *MessageContext) Kv_pair() IKv_pairContext {
 	var t = s.GetTypedRuleContext(reflect.TypeOf((*IKv_pairContext)(nil)).Elem(), 0)
 
@@ -893,7 +1000,7 @@ func (s *MessageContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 
 func (p *UNIFORM_LOGParser) Message() (localctx IMessageContext) {
 	localctx = NewMessageContext(p, p.GetParserRuleContext(), p.GetState())
-	p.EnterRule(localctx, 10, UNIFORM_LOGParserRULE_message)
+	p.EnterRule(localctx, 12, UNIFORM_LOGParserRULE_message)
 
 	defer func() {
 		p.ExitRule()
@@ -911,39 +1018,131 @@ func (p *UNIFORM_LOGParser) Message() (localctx IMessageContext) {
 		}
 	}()
 
-	p.SetState(61)
-	p.GetErrorHandler().Sync(p)
-	switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 3, p.GetParserRuleContext()) {
-	case 1:
-		p.EnterOuterAlt(localctx, 1)
-		{
-			p.SetState(53)
-			p.Match(UNIFORM_LOGParserT__0)
-		}
-		{
-			p.SetState(54)
-			p.Value()
-		}
-		{
-			p.SetState(55)
-			p.Match(UNIFORM_LOGParserT__1)
-		}
+	p.EnterOuterAlt(localctx, 1)
+	{
+		p.SetState(61)
+		p.Match(UNIFORM_LOGParserT__1)
+	}
+	{
+		p.SetState(62)
+		p.Kv_pair()
+	}
+	{
+		p.SetState(63)
+		p.Match(UNIFORM_LOGParserT__2)
+	}
 
-	case 2:
-		p.EnterOuterAlt(localctx, 2)
-		{
-			p.SetState(57)
-			p.Match(UNIFORM_LOGParserT__0)
-		}
-		{
-			p.SetState(58)
-			p.Kv_pair()
-		}
-		{
-			p.SetState(59)
-			p.Match(UNIFORM_LOGParserT__1)
-		}
+	return localctx
+}
 
+// IKnown_locationContext is an interface to support dynamic dispatch.
+type IKnown_locationContext interface {
+	antlr.ParserRuleContext
+
+	// GetParser returns the parser.
+	GetParser() antlr.Parser
+
+	// IsKnown_locationContext differentiates from other interfaces.
+	IsKnown_locationContext()
+}
+
+type Known_locationContext struct {
+	*antlr.BaseParserRuleContext
+	parser antlr.Parser
+}
+
+func NewEmptyKnown_locationContext() *Known_locationContext {
+	var p = new(Known_locationContext)
+	p.BaseParserRuleContext = antlr.NewBaseParserRuleContext(nil, -1)
+	p.RuleIndex = UNIFORM_LOGParserRULE_known_location
+	return p
+}
+
+func (*Known_locationContext) IsKnown_locationContext() {}
+
+func NewKnown_locationContext(parser antlr.Parser, parent antlr.ParserRuleContext, invokingState int) *Known_locationContext {
+	var p = new(Known_locationContext)
+
+	p.BaseParserRuleContext = antlr.NewBaseParserRuleContext(parent, invokingState)
+
+	p.parser = parser
+	p.RuleIndex = UNIFORM_LOGParserRULE_known_location
+
+	return p
+}
+
+func (s *Known_locationContext) GetParser() antlr.Parser { return s.parser }
+
+func (s *Known_locationContext) PATHLOC() antlr.TerminalNode {
+	return s.GetToken(UNIFORM_LOGParserPATHLOC, 0)
+}
+
+func (s *Known_locationContext) NUM() antlr.TerminalNode {
+	return s.GetToken(UNIFORM_LOGParserNUM, 0)
+}
+
+func (s *Known_locationContext) GetRuleContext() antlr.RuleContext {
+	return s
+}
+
+func (s *Known_locationContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
+	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *Known_locationContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(UNIFORM_LOGListener); ok {
+		listenerT.EnterKnown_location(s)
+	}
+}
+
+func (s *Known_locationContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(UNIFORM_LOGListener); ok {
+		listenerT.ExitKnown_location(s)
+	}
+}
+
+func (s *Known_locationContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
+	switch t := visitor.(type) {
+	case UNIFORM_LOGVisitor:
+		return t.VisitKnown_location(s)
+
+	default:
+		return t.VisitChildren(s)
+	}
+}
+
+func (p *UNIFORM_LOGParser) Known_location() (localctx IKnown_locationContext) {
+	localctx = NewKnown_locationContext(p, p.GetParserRuleContext(), p.GetState())
+	p.EnterRule(localctx, 14, UNIFORM_LOGParserRULE_known_location)
+
+	defer func() {
+		p.ExitRule()
+	}()
+
+	defer func() {
+		if err := recover(); err != nil {
+			if v, ok := err.(antlr.RecognitionException); ok {
+				localctx.SetException(v)
+				p.GetErrorHandler().ReportError(p, v)
+				p.GetErrorHandler().Recover(p, v)
+			} else {
+				panic(err)
+			}
+		}
+	}()
+
+	p.EnterOuterAlt(localctx, 1)
+	{
+		p.SetState(65)
+		p.Match(UNIFORM_LOGParserPATHLOC)
+	}
+	{
+		p.SetState(66)
+		p.Match(UNIFORM_LOGParserT__4)
+	}
+	{
+		p.SetState(67)
+		p.Match(UNIFORM_LOGParserNUM)
 	}
 
 	return localctx
@@ -1039,7 +1238,7 @@ func (s *Kv_pairContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 
 func (p *UNIFORM_LOGParser) Kv_pair() (localctx IKv_pairContext) {
 	localctx = NewKv_pairContext(p, p.GetParserRuleContext(), p.GetState())
-	p.EnterRule(localctx, 12, UNIFORM_LOGParserRULE_kv_pair)
+	p.EnterRule(localctx, 16, UNIFORM_LOGParserRULE_kv_pair)
 
 	defer func() {
 		p.ExitRule()
@@ -1059,15 +1258,15 @@ func (p *UNIFORM_LOGParser) Kv_pair() (localctx IKv_pairContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(63)
+		p.SetState(69)
 		p.Key()
 	}
 	{
-		p.SetState(64)
-		p.Match(UNIFORM_LOGParserT__4)
+		p.SetState(70)
+		p.Match(UNIFORM_LOGParserT__5)
 	}
 	{
-		p.SetState(65)
+		p.SetState(71)
 		p.Value()
 	}
 
@@ -1152,7 +1351,7 @@ func (s *KeyContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 
 func (p *UNIFORM_LOGParser) Key() (localctx IKeyContext) {
 	localctx = NewKeyContext(p, p.GetParserRuleContext(), p.GetState())
-	p.EnterRule(localctx, 14, UNIFORM_LOGParserRULE_key)
+	p.EnterRule(localctx, 18, UNIFORM_LOGParserRULE_key)
 	var _la int
 
 	defer func() {
@@ -1173,7 +1372,7 @@ func (p *UNIFORM_LOGParser) Key() (localctx IKeyContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(67)
+		p.SetState(73)
 		_la = p.GetTokenStream().LA(1)
 
 		if !(_la == UNIFORM_LOGParserSTRING || _la == UNIFORM_LOGParserIDENT) {
@@ -1277,7 +1476,7 @@ func (s *ValueContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 
 func (p *UNIFORM_LOGParser) Value() (localctx IValueContext) {
 	localctx = NewValueContext(p, p.GetParserRuleContext(), p.GetState())
-	p.EnterRule(localctx, 16, UNIFORM_LOGParserRULE_value)
+	p.EnterRule(localctx, 20, UNIFORM_LOGParserRULE_value)
 	var _la int
 
 	defer func() {
@@ -1298,7 +1497,7 @@ func (p *UNIFORM_LOGParser) Value() (localctx IValueContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(69)
+		p.SetState(75)
 		_la = p.GetTokenStream().LA(1)
 
 		if !(((_la)&-(0x1f+1)) == 0 && ((1<<uint(_la))&((1<<UNIFORM_LOGParserIP)|(1<<UNIFORM_LOGParserNUM)|(1<<UNIFORM_LOGParserDURATION)|(1<<UNIFORM_LOGParserSTRING)|(1<<UNIFORM_LOGParserIDENT))) != 0) {

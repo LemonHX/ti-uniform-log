@@ -1,4 +1,4 @@
-// Code generated from /home/lemonhx/Desktop/Go/LogParser/UNIFORM_LOG.g4 by ANTLR 4.9.1. DO NOT EDIT.
+// Code generated from /Users/lemonhx/Desktop/Go/ti-uniform-log/parser/UNIFORM_LOG.g4 by ANTLR 4.9.1. DO NOT EDIT.
 
 package parser // UNIFORM_LOG
 
@@ -23,8 +23,14 @@ type UNIFORM_LOGVisitor interface {
 	// Visit a parse tree produced by UNIFORM_LOGParser#location.
 	VisitLocation(ctx *LocationContext) interface{}
 
+	// Visit a parse tree produced by UNIFORM_LOGParser#custom_message.
+	VisitCustom_message(ctx *Custom_messageContext) interface{}
+
 	// Visit a parse tree produced by UNIFORM_LOGParser#message.
 	VisitMessage(ctx *MessageContext) interface{}
+
+	// Visit a parse tree produced by UNIFORM_LOGParser#known_location.
+	VisitKnown_location(ctx *Known_locationContext) interface{}
 
 	// Visit a parse tree produced by UNIFORM_LOGParser#kv_pair.
 	VisitKv_pair(ctx *Kv_pairContext) interface{}

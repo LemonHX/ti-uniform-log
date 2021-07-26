@@ -1,4 +1,4 @@
-// Code generated from /home/lemonhx/Desktop/Go/LogParser/UNIFORM_LOG.g4 by ANTLR 4.9.1. DO NOT EDIT.
+// Code generated from /Users/lemonhx/Desktop/Go/ti-uniform-log/parser/UNIFORM_LOG.g4 by ANTLR 4.9.1. DO NOT EDIT.
 
 package parser // UNIFORM_LOG
 
@@ -23,8 +23,14 @@ type UNIFORM_LOGListener interface {
 	// EnterLocation is called when entering the location production.
 	EnterLocation(c *LocationContext)
 
+	// EnterCustom_message is called when entering the custom_message production.
+	EnterCustom_message(c *Custom_messageContext)
+
 	// EnterMessage is called when entering the message production.
 	EnterMessage(c *MessageContext)
+
+	// EnterKnown_location is called when entering the known_location production.
+	EnterKnown_location(c *Known_locationContext)
 
 	// EnterKv_pair is called when entering the kv_pair production.
 	EnterKv_pair(c *Kv_pairContext)
@@ -50,8 +56,14 @@ type UNIFORM_LOGListener interface {
 	// ExitLocation is called when exiting the location production.
 	ExitLocation(c *LocationContext)
 
+	// ExitCustom_message is called when exiting the custom_message production.
+	ExitCustom_message(c *Custom_messageContext)
+
 	// ExitMessage is called when exiting the message production.
 	ExitMessage(c *MessageContext)
+
+	// ExitKnown_location is called when exiting the known_location production.
+	ExitKnown_location(c *Known_locationContext)
 
 	// ExitKv_pair is called when exiting the kv_pair production.
 	ExitKv_pair(c *Kv_pairContext)

@@ -8,7 +8,7 @@ import (
 
 func genlog() {
 	var log test.Log
-	err := log.GenerateLogs(int(math.Round(1024 * 6.66 * 1024)))
+	err := log.GenerateLogs(int(math.Round(1024 * 100 * 1024)))
 	if err != nil {
 		fmt.Println(err)
 	}

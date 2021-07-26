@@ -1,4 +1,4 @@
-// Code generated from /home/lemonhx/Desktop/Go/LogParser/UNIFORM_LOG.g4 by ANTLR 4.9.1. DO NOT EDIT.
+// Code generated from /Users/lemonhx/Desktop/Go/ti-uniform-log/parser/UNIFORM_LOG.g4 by ANTLR 4.9.1. DO NOT EDIT.
 
 package parser // UNIFORM_LOG
 
@@ -51,11 +51,23 @@ func (s *BaseUNIFORM_LOGListener) EnterLocation(ctx *LocationContext) {}
 // ExitLocation is called when production location is exited.
 func (s *BaseUNIFORM_LOGListener) ExitLocation(ctx *LocationContext) {}
 
+// EnterCustom_message is called when production custom_message is entered.
+func (s *BaseUNIFORM_LOGListener) EnterCustom_message(ctx *Custom_messageContext) {}
+
+// ExitCustom_message is called when production custom_message is exited.
+func (s *BaseUNIFORM_LOGListener) ExitCustom_message(ctx *Custom_messageContext) {}
+
 // EnterMessage is called when production message is entered.
 func (s *BaseUNIFORM_LOGListener) EnterMessage(ctx *MessageContext) {}
 
 // ExitMessage is called when production message is exited.
 func (s *BaseUNIFORM_LOGListener) ExitMessage(ctx *MessageContext) {}
+
+// EnterKnown_location is called when production known_location is entered.
+func (s *BaseUNIFORM_LOGListener) EnterKnown_location(ctx *Known_locationContext) {}
+
+// ExitKnown_location is called when production known_location is exited.
+func (s *BaseUNIFORM_LOGListener) ExitKnown_location(ctx *Known_locationContext) {}
 
 // EnterKv_pair is called when production kv_pair is entered.
 func (s *BaseUNIFORM_LOGListener) EnterKv_pair(ctx *Kv_pairContext) {}

@@ -1,13 +1,15 @@
 grammar UNIFORM_LOG;
 
 logs: log ('\n' log)*;
-log: date_time level location message*;
+log: date_time level location custom_message message*;
 
 date_time: '[' DATE_TIME ']';
 level: '[' LEVEL ']';
-location: '[<unknown>]' | '[' PATHLOC ':' NUM ']';
-message: '[' value ']' | '[' kv_pair ']';
+location: '[' '<unknown>' ']' | '[' known_location ']';
+custom_message: '[' key ']';
+message: '[' kv_pair ']';
 
+known_location : PATHLOC ':' NUM;
 kv_pair: key '=' value;
 key: IDENT | STRING;
 value: IDENT | STRING | NUM | DURATION | IP;
